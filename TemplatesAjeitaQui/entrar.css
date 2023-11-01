@@ -1,13 +1,12 @@
+
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.body {
-    padding: 10px;
-}
-
+/* Estilos do cabeçalho (classe "entrar") */
 .entrar {
     padding: 40px 40px 20px 40px;
     display: flex;
@@ -17,10 +16,18 @@
     gap: 20px;
 }
 
+/* Estilos de parágrafos */
+p{
+    text-align: center;
+    color: #717070;
+}
+
+/* Estilos do título */
 h1 {
     color: #2A5CBF;
 }
 
+/* Estilos do formulário (classe "formulario-entrar") */
 .formulario-entrar form{
     max-width: 500px;
     margin: auto;
@@ -31,10 +38,7 @@ h1 {
     gap: 5px;
 }
 
-.formulario-entrar button{
-    width: 500px;
-}
-
+/* Estilos dos inputs do formulário */
 input {
     width: 100%;
     padding: 10px;
@@ -44,7 +48,10 @@ input {
     border-color: #8E8E8E;
 }
 
+/* Estilos do botão do formulário (classe "formulario-entrar") */
+
 button#entrar-btn {
+    width: 500px;
     background-color: #007bff;
     color: #fff;
     padding: 14px 30px;
@@ -55,12 +62,12 @@ button#entrar-btn {
 }
 
 button#entrar-btn:hover {
-    background-color: #0056b3;
+    background-color: #074f9b;
 }
 
 
-
-footer {
+/* Estilos do rodapé (elemento "footer") */
+footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +76,7 @@ footer {
     margin-top: 40px;
 }
 
-
+/* Estilos dos links no rodapé (classe "footer-links") */
 .footer-links {
     display: flex;
     gap: 40px;
@@ -82,49 +89,66 @@ footer {
     width: 100px;
 }
 
+/* Estilos das redes sociais no rodapé (classe "footer-redes") */
 .footer-redes {
     display: flex;
     gap: 20px;
+    align-items: center;
+    justify-content:right;
+    padding-right: 20px;
 }
 
 .icone-rede {
     width: 40px;
     height: 40px;
-    background-color: #d5d5d5;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(213, 213, 213);
+    box-shadow: 0 0 5px rgba(225, 225, 225, 0.5);
     border-radius: 50%;
 }
 
+/* Estilos responsivos*/
 @media (max-width: 768px) {
 
     .entrar {
         padding: 20px;
     }
 
+    /* Ajuste imagem inicial*/
     .entrar img{
+        width: 200px;
 
     }
 
+    h1{
+        font-size: 28px;
+    }
 
     input {
         padding: 8px;
         font-size: 14px;
     }
 
+    /* Ajuste tamanho do form mobile*/
+    .formulario-entrar form{
+        max-width: 300px;
+    }
+
     button#entrar-btn {
         padding: 12px;
+        max-width: 300px;
+    }
+
+    /* Ajuste para footer mobile*/
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
     .footer-links {
         gap: 10px;
         flex-direction: column;
         text-decoration: underline;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
     }
 
 }
