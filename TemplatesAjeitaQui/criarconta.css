@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button{
+    border: 1px solid #007bff;
+}
+
 .criarconta-img {
     padding: 40px;
     display: flex;
@@ -18,20 +22,35 @@ form.cadastro{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     width: 90%;
     max-width: 500px;
     margin: auto;
 }
 
-input {
+::placeholder{
+    color: #000;
+}
+
+form.cadastro input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 3px 0;
     box-sizing: border-box;
-    border-radius: 5px;
-    border-color: #b9b9b9;
+    border-radius: 10px;
+    border: 1px solid #b9b9b9;
+    font-size: 16px;
 }
+
+form.cadastro input:focus {
+    border: 1px solid #b9b9b9;
+    outline: 1px solid #8e8e8e;
+}
+
+#nascimento{
+    text-transform: uppercase;
+}
+
 .telefone{
     display: flex;
     width: 100%;
@@ -44,11 +63,15 @@ input {
 
 .cadastrar-btn{
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 10px;
+    
     background-color: #007bff;
     width: 100%;
+    margin: 10px 0;
 }
+
+
 .cadastrar-btn:hover{
     background: color #f66600;
 }
